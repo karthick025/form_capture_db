@@ -5,40 +5,40 @@ function myFunction()
 	
 	if(strike <= 1)
 	{
-		document.getElementById("score").innerHTML="Does not Meet Expectations";
+		document.getElementById("score").value="Does not Meet Expectations";
 		document.getElementById("description").style.display = "none";
 	}
 	
 	else if (strike <= 2)
 	{
-		document.getElementById("score").innerHTML="Mostly Meets Expectations";
+		document.getElementById("score").value="Mostly Meets Expectations";
 		document.getElementById("description").style.display = "none";
 	}
 	
 	else if (strike <= 3)
 		
 		{
-			document.getElementById("score").innerHTML="Meets Expectations";
+			document.getElementById("score").value="Meets Expectations";
 			document.getElementById("description").style.display = "none";
 		}
 	
 	else if (strike  <= 5)
 		
 		{
-			document.getElementById("score").innerHTML="Exceeds Expectations";
+			document.getElementById("score").value="Exceeds Expectations";
 			document.getElementById("description").style.display = "block";
 		}
 		
 	else if (strike > 5)
         
 		{
-			document.getElementById("score").innerHTML="Outstanding";
+			document.getElementById("score").value="Outstanding";
 			document.getElementById("description").style.display = "block";
 		}			
 	
 	else
 	{
-		document.getElementById("score").innerHTML="";
+		document.getElementById("score").value="";
 	}
 		
 }
@@ -282,11 +282,3 @@ document.getElementById("local").style.display = "none";
 
 
 }
-
-
-
-
-
-
-
-
